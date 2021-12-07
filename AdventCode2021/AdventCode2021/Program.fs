@@ -16,9 +16,9 @@ let fileLen = readLinesString.Count()
 
 let findLargerThanPrevious (lines : int seq) : int = 
     let mutable greaterThanCount = 0
-    let mutable prevLine = 0
+    let mutable prevLine = lines.First()
 
-    for line in lines do
+    for line in lines.Skip(1) do
         if line > 0 then
             printf "Is %i greater than %i" line prevLine
             if line > prevLine
