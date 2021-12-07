@@ -11,7 +11,7 @@ let tryParseInt s =
     | false, _ -> None
 
 let readLinesString  = File.ReadLines("../../../Input/dayone.txt")
-let numbers = readLinesString |> Seq.choose tryParseInt |> Seq.sort
+let numbers = readLinesString |> Seq.choose tryParseInt
 let fileLen = readLinesString.Count()
 
 let findLargerThanPrevious (lines : int seq) : int = 
@@ -33,5 +33,5 @@ let findLargerThanPrevious (lines : int seq) : int =
 
 [<EntryPoint>]
 let main argv =
-    let result = findLargerThanPrevious numbers //Comes up with 1810
+    let result = findLargerThanPrevious numbers
     0 // return an integer exit code
