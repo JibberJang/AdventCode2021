@@ -6,10 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="helpers\FileHelpers.fs" />
+    <Compile Include="Puzzles\two\daytwo.fs" />
+    <Compile Include="Puzzles\one\dayonetwo.fs" />
+    <Compile Include="Puzzles\one\dayone.fs" />
+    <Content Include="Input\daytwo.txt" />
     <Content Include="Input\dayone.txt" />
     <Compile Include="Program.fs" />
   </ItemGroup>
-
-  <ItemGroup />
 
 </Project>
